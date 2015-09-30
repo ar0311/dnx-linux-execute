@@ -13,7 +13,6 @@ namespace dnx_linux_execute
             var startInfo = new ProcessStartInfo();
             startInfo.FileName = "uname";
             startInfo.Arguments = "-a";
-            startInfo.UseShellExecute = true;
 
             try
             {

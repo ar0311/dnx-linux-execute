@@ -2,11 +2,19 @@
   "version": "1.0.0-*",
   "description": "dnx-linux-execute Console Application",
   "authors": [ "" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
+  "packOptions": {
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": ""
+  },
 
   "dependencies": {
+    "System.Diagnostics.Process": "4.1.0",
+    "System.Threading": "4.0.11",
+    "System.Linq": "4.1.0",
+    "System.Console": "4.0.0",
+    "System.Collections": "4.0.11",
+    "Microsoft.CSharp": "4.0.1"
   },
 
   "commands": {
@@ -14,14 +22,9 @@
   },
 
   "frameworks": {
-    "dnxcore50": {
+    "netcoreapp1.0": {
       "dependencies": {
-        "Microsoft.CSharp": "4.0.1-beta-23225",
-        "System.Collections": "4.0.11-beta-23225",
-        "System.Console": "4.0.0-beta-23302",
-        "System.Linq": "4.0.1-beta-23225",
-        "System.Threading": "4.0.11-beta-23225",
-        "System.Diagnostics.Process": "4.0.0-beta-23302"
+        
       }
     }
   }

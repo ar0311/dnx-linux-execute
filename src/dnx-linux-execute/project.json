@@ -1,8 +1,5 @@
 ﻿{
   "version": "1.0.0-*",
-  "description": "dnx-linux-execute Console Application",
-  "authors": [ "" ],
-
   "buildOptions": {
     "emitEntryPoint": true
   },
@@ -11,14 +8,12 @@
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.0.0"
-    },
+    }
+  },
 
-    "frameworks": {
-      "netcoreapp1.0": {
-        "dependencies": {
-
-        }
-      }
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
     }
   }
 }

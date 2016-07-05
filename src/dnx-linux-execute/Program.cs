@@ -8,7 +8,7 @@ namespace dnx_linux_execute
 {
     public class Program
     {
-        public void Main(string[] args)
+        public static int Main(string[] args)
         {
             var startInfo = new ProcessStartInfo();
             startInfo.FileName = "uname";
@@ -21,6 +21,7 @@ namespace dnx_linux_execute
                 using (var process = Process.Start(startInfo))
                 {
                     process.WaitForExit();
+                    return 0;
                 }
             }
             catch
